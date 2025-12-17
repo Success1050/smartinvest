@@ -1,0 +1,308 @@
+Uri: https://cdn.gtranslate.net/widgets/latest/float.js
+File Name: C:\Users\USER\Desktop\smartmineinvest.com\widgets\latest\float.js
+Content Type: application/javascript
+
+Uri: https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js
+File Name: C:\Users\USER\Desktop\smartmineinvest.com\npm\alpinejs@3.x.x\dist\cdn.min.js
+Content Type: application/javascript
+
+Uri: https://cdn.tailwindcss.com/3.4.17
+File Name: C:\Users\USER\Desktop\smartmineinvest.com\3.4.17
+Content Type: text/javascript
+
+Uri: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css
+File Name: C:\Users\USER\Desktop\smartmineinvest.com\ajax\libs\font-awesome\6.4.0\css\all.min.css
+Content Type: text/css
+
+Uri: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/webfonts/fa-brands-400.ttf
+File Name: C:\Users\USER\Desktop\smartmineinvest.com\ajax\libs\font-awesome\6.4.0\webfonts\fa-brands-400.ttf
+Content Type: application/octet-stream
+
+Uri: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/webfonts/fa-brands-400.woff2
+File Name: C:\Users\USER\Desktop\smartmineinvest.com\ajax\libs\font-awesome\6.4.0\webfonts\fa-brands-400.woff2
+Content Type: application/octet-stream
+
+Uri: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/webfonts/fa-regular-400.ttf
+File Name: C:\Users\USER\Desktop\smartmineinvest.com\ajax\libs\font-awesome\6.4.0\webfonts\fa-regular-400.ttf
+Content Type: application/octet-stream
+
+Uri: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/webfonts/fa-regular-400.woff2
+File Name: C:\Users\USER\Desktop\smartmineinvest.com\ajax\libs\font-awesome\6.4.0\webfonts\fa-regular-400.woff2
+Content Type: application/octet-stream
+
+Uri: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/webfonts/fa-solid-900.ttf
+File Name: C:\Users\USER\Desktop\smartmineinvest.com\ajax\libs\font-awesome\6.4.0\webfonts\fa-solid-900.ttf
+Content Type: application/octet-stream
+
+Uri: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/webfonts/fa-solid-900.woff2
+File Name: C:\Users\USER\Desktop\smartmineinvest.com\ajax\libs\font-awesome\6.4.0\webfonts\fa-solid-900.woff2
+Content Type: application/octet-stream
+
+Uri: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/webfonts/fa-v4compatibility.ttf
+File Name: C:\Users\USER\Desktop\smartmineinvest.com\ajax\libs\font-awesome\6.4.0\webfonts\fa-v4compatibility.ttf
+Content Type: application/octet-stream
+
+Uri: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/webfonts/fa-v4compatibility.woff2
+File Name: C:\Users\USER\Desktop\smartmineinvest.com\ajax\libs\font-awesome\6.4.0\webfonts\fa-v4compatibility.woff2
+Content Type: application/octet-stream
+
+Uri: https://code.jquery.com/jquery-1.12.0.min.js
+File Name: C:\Users\USER\Desktop\smartmineinvest.com\jquery-1.12.0.min.js
+Content Type: application/javascript
+
+Uri: https://code.jquery.com/jquery-3.6.0.min.js
+File Name: C:\Users\USER\Desktop\smartmineinvest.com\jquery-3.6.0.min.js
+Content Type: application/javascript
+
+Uri: https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap
+File Name: C:\Users\USER\Desktop\smartmineinvest.com\css2
+Content Type: text/css
+
+Uri: https://fonts.gstatic.com/s/inter/v20/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuFuYMZg.ttf
+File Name: C:\Users\USER\Desktop\smartmineinvest.com\s\inter\v20\UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuFuYMZg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v20/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuGKYMZg.ttf
+File Name: C:\Users\USER\Desktop\smartmineinvest.com\s\inter\v20\UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuGKYMZg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v20/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuI6fMZg.ttf
+File Name: C:\Users\USER\Desktop\smartmineinvest.com\s\inter\v20\UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuI6fMZg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v20/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfMZg.ttf
+File Name: C:\Users\USER\Desktop\smartmineinvest.com\s\inter\v20\UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfMZg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v20/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuOKfMZg.ttf
+File Name: C:\Users\USER\Desktop\smartmineinvest.com\s\inter\v20\UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuOKfMZg.ttf
+Content Type: font/ttf
+
+Uri: https://smartmineinvest.com/
+File Name: C:\Users\USER\Desktop\smartmineinvest.com\index.htm
+Content Type: text/html
+
+Uri: https://smartmineinvest.com/about
+File Name: C:\Users\USER\Desktop\smartmineinvest.com\about.html
+Content Type: text/html
+
+Uri: https://smartmineinvest.com/automate
+File Name: C:\Users\USER\Desktop\smartmineinvest.com\automate.html
+Content Type: text/html
+
+Uri: https://smartmineinvest.com/contact
+File Name: C:\Users\USER\Desktop\smartmineinvest.com\contact.html
+Content Type: text/html
+
+Uri: https://smartmineinvest.com/contacts
+File Name: C:\Users\USER\Desktop\smartmineinvest.com\contacts.html
+Content Type: text/html
+
+Uri: https://smartmineinvest.com/copy
+File Name: C:\Users\USER\Desktop\smartmineinvest.com\copy.html
+Content Type: text/html
+
+Uri: https://smartmineinvest.com/cryptocurrencies
+File Name: C:\Users\USER\Desktop\smartmineinvest.com\cryptocurrencies.html
+Content Type: text/html
+
+Uri: https://smartmineinvest.com/dash/bitcoin-btc-logo.png
+File Name: C:\Users\USER\Desktop\smartmineinvest.com\dash\bitcoin-btc-logo.png
+Content Type: image/png
+
+Uri: https://smartmineinvest.com/dash/ethereum-eth-logo.png
+File Name: C:\Users\USER\Desktop\smartmineinvest.com\dash\ethereum-eth-logo.png
+Content Type: image/png
+
+Uri: https://smartmineinvest.com/dash/tether-usdt-logo.png
+File Name: C:\Users\USER\Desktop\smartmineinvest.com\dash\tether-usdt-logo.png
+Content Type: image/png
+
+Uri: https://smartmineinvest.com/etfs
+File Name: C:\Users\USER\Desktop\smartmineinvest.com\etfs.html
+Content Type: text/html
+
+Uri: https://smartmineinvest.com/faq
+File Name: C:\Users\USER\Desktop\smartmineinvest.com\faq.html
+Content Type: text/html
+
+Uri: https://smartmineinvest.com/for-traders
+File Name: C:\Users\USER\Desktop\smartmineinvest.com\for-traders.html
+Content Type: text/html
+
+Uri: https://smartmineinvest.com/forex
+File Name: C:\Users\USER\Desktop\smartmineinvest.com\forex.html
+Content Type: text/html
+
+Uri: https://smartmineinvest.com/forgot-password
+File Name: C:\Users\USER\Desktop\smartmineinvest.com\forgot-password.html
+Content Type: text/html
+
+Uri: https://smartmineinvest.com/indices
+File Name: C:\Users\USER\Desktop\smartmineinvest.com\indices.html
+Content Type: text/html
+
+Uri: https://smartmineinvest.com/login
+File Name: C:\Users\USER\Desktop\smartmineinvest.com\login.html
+Content Type: text/html
+
+Uri: https://smartmineinvest.com/privacy
+File Name: C:\Users\USER\Desktop\smartmineinvest.com\privacy.html
+Content Type: text/html
+
+Uri: https://smartmineinvest.com/register
+File Name: C:\Users\USER\Desktop\smartmineinvest.com\register.html
+Content Type: text/html
+
+Uri: https://smartmineinvest.com/regulation
+File Name: C:\Users\USER\Desktop\smartmineinvest.com\regulation.html
+Content Type: text/html
+
+Uri: https://smartmineinvest.com/shares
+File Name: C:\Users\USER\Desktop\smartmineinvest.com\shares.html
+Content Type: text/html
+
+Uri: https://smartmineinvest.com/storage/app/public/photos/dYO5FpXn1XJ1YxYkwMEA5LF24Z0OyDgKwK5B6Sum.png
+File Name: C:\Users\USER\Desktop\smartmineinvest.com\storage\app\public\photos\dYO5FpXn1XJ1YxYkwMEA5LF24Z0OyDgKwK5B6Sum.png
+Content Type: image/png
+
+Uri: https://smartmineinvest.com/storage/app/public/photos/XTMjd0TeaOpHFxkazgK6VeMRUbfDgDNGSDYCrvRA.png
+File Name: C:\Users\USER\Desktop\smartmineinvest.com\storage\app\public\photos\XTMjd0TeaOpHFxkazgK6VeMRUbfDgDNGSDYCrvRA.png
+Content Type: image/png
+
+Uri: https://smartmineinvest.com/temp/custom/img/1497835.png
+File Name: C:\Users\USER\Desktop\smartmineinvest.com\temp\custom\img\1497835.png
+Content Type: image/png
+
+Uri: https://smartmineinvest.com/temp/custom/img/abt.png
+File Name: C:\Users\USER\Desktop\smartmineinvest.com\temp\custom\img\abt.png
+Content Type: image/png
+
+Uri: https://smartmineinvest.com/temp/custom/img/bch.png
+File Name: C:\Users\USER\Desktop\smartmineinvest.com\temp\custom\img\bch.png
+Content Type: image/png
+
+Uri: https://smartmineinvest.com/temp/custom/img/bnb.png
+File Name: C:\Users\USER\Desktop\smartmineinvest.com\temp\custom\img\bnb.png
+Content Type: image/png
+
+Uri: https://smartmineinvest.com/temp/custom/img/btc.png
+File Name: C:\Users\USER\Desktop\smartmineinvest.com\temp\custom\img\btc.png
+Content Type: image/png
+
+Uri: https://smartmineinvest.com/temp/custom/img/commission-scheme-crypt1d.png
+File Name: C:\Users\USER\Desktop\smartmineinvest.com\temp\custom\img\commission-scheme-crypt1d.png
+Content Type: image/png
+
+Uri: https://smartmineinvest.com/temp/custom/img/commission-scheme-crypt1t.png
+File Name: C:\Users\USER\Desktop\smartmineinvest.com\temp\custom\img\commission-scheme-crypt1t.png
+Content Type: image/png
+
+Uri: https://smartmineinvest.com/temp/custom/img/commission-scheme-crypt1t1.png
+File Name: C:\Users\USER\Desktop\smartmineinvest.com\temp\custom\img\commission-scheme-crypt1t1.png
+Content Type: image/png
+
+Uri: https://smartmineinvest.com/temp/custom/img/doge.png
+File Name: C:\Users\USER\Desktop\smartmineinvest.com\temp\custom\img\doge.png
+Content Type: image/png
+
+Uri: https://smartmineinvest.com/temp/custom/img/eth.png
+File Name: C:\Users\USER\Desktop\smartmineinvest.com\temp\custom\img\eth.png
+Content Type: image/png
+
+Uri: https://smartmineinvest.com/temp/custom/img/ltc.png
+File Name: C:\Users\USER\Desktop\smartmineinvest.com\temp\custom\img\ltc.png
+Content Type: image/png
+
+Uri: https://smartmineinvest.com/temp/custom/img/speed.png
+File Name: C:\Users\USER\Desktop\smartmineinvest.com\temp\custom\img\speed.png
+Content Type: image/png
+
+Uri: https://smartmineinvest.com/temp/custom/img/usdt.png
+File Name: C:\Users\USER\Desktop\smartmineinvest.com\temp\custom\img\usdt.png
+Content Type: image/png
+
+Uri: https://smartmineinvest.com/temp/custom/img/users.png
+File Name: C:\Users\USER\Desktop\smartmineinvest.com\temp\custom\img\users.png
+Content Type: image/png
+
+Uri: https://smartmineinvest.com/temp/custom/img/website.png
+File Name: C:\Users\USER\Desktop\smartmineinvest.com\temp\custom\img\website.png
+Content Type: image/png
+
+Uri: https://smartmineinvest.com/temp/custom/imge1.jpg
+File Name: C:\Users\USER\Desktop\smartmineinvest.com\temp\custom\imge1.jpg
+Content Type: image/jpeg
+
+Uri: https://smartmineinvest.com/temp/custom/imge2.jpg
+File Name: C:\Users\USER\Desktop\smartmineinvest.com\temp\custom\imge2.jpg
+Content Type: image/jpeg
+
+Uri: https://smartmineinvest.com/temp/custom/imge3.jpg
+File Name: C:\Users\USER\Desktop\smartmineinvest.com\temp\custom\imge3.jpg
+Content Type: image/jpeg
+
+Uri: https://smartmineinvest.com/temp/custom/imge4.jpg
+File Name: C:\Users\USER\Desktop\smartmineinvest.com\temp\custom\imge4.jpg
+Content Type: image/jpeg
+
+Uri: https://smartmineinvest.com/temp/custom/imge5.jpg
+File Name: C:\Users\USER\Desktop\smartmineinvest.com\temp\custom\imge5.jpg
+Content Type: image/jpeg
+
+Uri: https://smartmineinvest.com/temp/custom/jenny.jpg
+File Name: C:\Users\USER\Desktop\smartmineinvest.com\temp\custom\jenny.jpg
+Content Type: image/jpeg
+
+Uri: https://smartmineinvest.com/temp/custom/kathy.jpg
+File Name: C:\Users\USER\Desktop\smartmineinvest.com\temp\custom\kathy.jpg
+Content Type: image/jpeg
+
+Uri: https://smartmineinvest.com/temp/custom/mike.jpg
+File Name: C:\Users\USER\Desktop\smartmineinvest.com\temp\custom\mike.jpg
+Content Type: image/jpeg
+
+Uri: https://smartmineinvest.com/terms
+File Name: C:\Users\USER\Desktop\smartmineinvest.com\terms.html
+Content Type: text/html
+
+Uri: https://smartmineinvest.com/trade
+File Name: C:\Users\USER\Desktop\smartmineinvest.com\trade.html
+Content Type: text/html
+
+Uri: https://smartmineinvest.com/trading-conditions
+File Name: C:\Users\USER\Desktop\smartmineinvest.com\trading-conditions.html
+Content Type: text/html
+
+Uri: https://smartmineinvest.com/why-us
+File Name: C:\Users\USER\Desktop\smartmineinvest.com\why-us.html
+Content Type: text/html
+
+Uri: https://s3.tradingview.com/external-embedding/embed-widget-forex-cross-rates.js
+File Name: C:\Users\USER\Desktop\smartmineinvest.com\external-embedding\embed-widget-forex-cross-rates.js
+Content Type: text/javascript
+
+Uri: https://s3.tradingview.com/external-embedding/embed-widget-forex-heat-map.js
+File Name: C:\Users\USER\Desktop\smartmineinvest.com\external-embedding\embed-widget-forex-heat-map.js
+Content Type: text/javascript
+
+Uri: https://s3.tradingview.com/external-embedding/embed-widget-market-overview.js
+File Name: C:\Users\USER\Desktop\smartmineinvest.com\external-embedding\embed-widget-market-overview.js
+Content Type: text/javascript
+
+Uri: https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js
+File Name: C:\Users\USER\Desktop\smartmineinvest.com\external-embedding\embed-widget-ticker-tape.js
+Content Type: text/javascript
+
+Uri: https://s3.tradingview.com/tv.js
+File Name: C:\Users\USER\Desktop\smartmineinvest.com\tv.js
+Content Type: text/javascript
+
+Uri: https://unpkg.com/alpinejs@3.15.3/dist/cdn.min.js
+File Name: C:\Users\USER\Desktop\smartmineinvest.com\alpinejs@3.15.3\dist\cdn.min.js
+Content Type: text/javascript
+
+Uri: https://unpkg.com/lucide@0.561.0/dist/umd/lucide.js
+File Name: C:\Users\USER\Desktop\smartmineinvest.com\lucide@0.561.0\dist\umd\lucide.js
+Content Type: text/javascript
+

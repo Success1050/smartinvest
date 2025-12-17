@@ -1,0 +1,1004 @@
+﻿<!DOCTYPE html>
+<html
+  lang="en"
+  x-data="{ darkMode: localStorage.getItem('theme') === 'light' ? false : true }"
+  :class="{ 'dark': darkMode }"
+  class="dark bg-gray-300 h-full"
+>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="csrf-token"
+      content="qPOr2R7aHP2K1Dx4msEGrGZqPxZApJYO3ICipbRd"
+    />
+    <title>smartmineinvest - Sign In</title>
+
+    <!-- Favicon -->
+    <link
+      href="storage/app/public/photos/XTMjd0TeaOpHFxkazgK6VeMRUbfDgDNGSDYCrvRA.png"
+      rel="icon"
+      type="image/x-icon"
+    />
+
+    <!-- Inter Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link
+      href="css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind CSS -->
+    <script src="3.4.17"></script>
+    <script>
+      // Set dark mode as default if no preference is stored
+      if (!localStorage.getItem("theme")) {
+        localStorage.setItem("theme", "dark");
+        document.documentElement.classList.add("dark");
+      }
+
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["Inter", "sans-serif"],
+            },
+            colors: {
+              primary: {
+                50: "#eef2ff",
+                100: "#e0e7ff",
+                200: "#c7d2fe",
+                300: "#a5b4fc",
+                400: "#818cf8",
+                500: "#6366f1",
+                600: "#4f46e5",
+                700: "#4338ca",
+                800: "#3730a3",
+                900: "#312e81",
+              },
+              glass: "rgba(255, 255, 255, 0.05)",
+            },
+            backdropBlur: {
+              xs: "2px",
+            },
+            animation: {
+              "gradient-x": "gradient-x 15s ease infinite",
+              "gradient-y": "gradient-y 15s ease infinite",
+              "gradient-xy": "gradient-xy 15s ease infinite",
+              "pulse-slow": "pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite",
+              float: "float 6s ease-in-out infinite",
+            },
+            keyframes: {
+              "gradient-y": {
+                "0%, 100%": {
+                  "background-size": "400% 400%",
+                  "background-position": "center top",
+                },
+                "50%": {
+                  "background-size": "200% 200%",
+                  "background-position": "center center",
+                },
+              },
+              "gradient-x": {
+                "0%, 100%": {
+                  "background-size": "200% 200%",
+                  "background-position": "left center",
+                },
+                "50%": {
+                  "background-size": "200% 200%",
+                  "background-position": "right center",
+                },
+              },
+              "gradient-xy": {
+                "0%, 100%": {
+                  "background-size": "400% 400%",
+                  "background-position": "left center",
+                },
+                "50%": {
+                  "background-size": "200% 200%",
+                  "background-position": "right center",
+                },
+              },
+              float: {
+                "0%, 100%": { transform: "translateY(0)" },
+                "50%": { transform: "translateY(-10px)" },
+              },
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- Alpine.js -->
+    <script src="npm/alpinejs%403.x.x/dist/cdn.min.js" defer=""></script>
+
+    <!-- Lucide Icons -->
+    <script src="lucide%400.561.0/dist/umd/lucide.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="temp/custom/css/bootstrap.min.css" />
+    <!-- jQuery library -->
+    <script src="temp/custom/js/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="temp/custom/js/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="temp/custom/js/bootstrap.min.js"></script>
+
+    <link href="temp/custom/css/main.css" rel="stylesheet" />
+    <!-- <link href="404.html" rel="stylesheet" /> -->
+
+    <title>smartmineinvest</title>
+    <link rel="manifest" href="temp/custom/js/manifest.json" />
+    <meta name="theme-color" content="#4D7DE6" />
+    <meta name="msapplication-navbutton-color" content="#4D7DE6" />
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#4D7DE6" />
+
+    <meta name="theme-color" content="#4D7DE6" />
+    <meta name="msapplication-navbutton-color" content="#4D7DE6" />
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#4D7DE6" />
+
+    <link
+      href="storage/app/public/photos/XTMjd0TeaOpHFxkazgK6VeMRUbfDgDNGSDYCrvRA.png"
+      rel="icon"
+      type="image/x-icon"
+    />
+    <!-- <link rel="icon" sizes="192x192" href="404.html"> -->
+
+    <meta name="keywords" content="smartmineinvest" />
+    <meta
+      property="og:image"
+      content="temp/custom/images/icon/icon-310x310.png"
+    />
+
+    <meta
+      name="msapplication-square310x310logo"
+      content="https://smartmineinvest.com/storage/app/public/photos/XTMjd0TeaOpHFxkazgK6VeMRUbfDgDNGSDYCrvRA.png"
+    />
+    <meta
+      name="msapplication-square70x70logo"
+      content="https://smartmineinvest.com/storage/app/public/photos/XTMjd0TeaOpHFxkazgK6VeMRUbfDgDNGSDYCrvRA.png"
+    />
+    <meta
+      name="msapplication-square150x150logo"
+      content="https://smartmineinvest.com/storage/app/public/photos/XTMjd0TeaOpHFxkazgK6VeMRUbfDgDNGSDYCrvRA.png"
+    />
+    <meta
+      name="msapplication-wide310x150logo"
+      content="https://smartmineinvest.com/storage/app/public/photos/XTMjd0TeaOpHFxkazgK6VeMRUbfDgDNGSDYCrvRA.png"
+    />
+
+    <link
+      rel="apple-touch-icon-precomposed"
+      href="storage/app/public/photos/XTMjd0TeaOpHFxkazgK6VeMRUbfDgDNGSDYCrvRA.png"
+    />
+    <!-- <link rel="apple-touch-icon-precomposed" sizes="57x57" href="404.html" /> -->
+    <!-- <link rel="apple-touch-icon-precomposed" sizes="72x72" href="404.html" /> -->
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="114x114"
+      href="storage/app/public/photos/XTMjd0TeaOpHFxkazgK6VeMRUbfDgDNGSDYCrvRA.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="144x144"
+      href="storage/app/public/photos/XTMjd0TeaOpHFxkazgK6VeMRUbfDgDNGSDYCrvRA.png"
+    />
+
+    <meta property="og:site_name" content="smartmineinvest" />
+    <meta property="og:title" content="Trading With smartmineinvest" />
+    <meta
+      name="description"
+      content="smartmineinvest LIMITED???
+INVEST IN A LEADING
+TRADE AND INVESTMENT
+COMPANY, OPERATING IN
+THE UK.
+SERVICES INCLUDE: FOREX TRADING
+CRYPTOCURRENCIES, STOCKS & COMMODITIES INVESTMENTS. OIL & GAS, REAL ESTATE INVESTMENTS, MARKET
+RESEARCH AND ANALYSIS:
+ASSISTING BOTH INDIVIDUALS & COMPANIES INVEST IN THE
+COMMERCIAL MARKET.TRAINING CLIENTS & INVESTORS TO BECOME
+EXPERTISE.???"
+    />
+    <meta
+      property="og:description"
+      content="smartmineinvest LIMITED???
+INVEST IN A LEADING
+TRADE AND INVESTMENT
+COMPANY, OPERATING IN
+THE UK.
+SERVICES INCLUDE: FOREX TRADING
+CRYPTOCURRENCIES, STOCKS & COMMODITIES INVESTMENTS. OIL & GAS, REAL ESTATE INVESTMENTS, MARKET
+RESEARCH AND ANALYSIS:
+ASSISTING BOTH INDIVIDUALS & COMPANIES INVEST IN THE
+COMMERCIAL MARKET.TRAINING CLIENTS & INVESTORS TO BECOME
+EXPERTISE.???"
+    />
+    <meta property="og:type" content="website" />
+
+    <!-- <link href="404" rel="stylesheet" /> -->
+  </head>
+
+  <style>
+    body {
+      overflow-x: hidden;
+    }
+
+    [x-cloak] {
+      display: none !important;
+    }
+
+    .glass-effect {
+      background: rgba(255, 255, 255, 0.03);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    }
+
+    .trading-card {
+      background: rgba(17, 24, 39, 0.95);
+      backdrop-filter: blur(20px);
+      border: 1px solid rgba(75, 85, 99, 0.2);
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3),
+        0 20px 25px -5px rgba(0, 0, 0, 0.1),
+        inset 0 1px 0 rgba(255, 255, 255, 0.05);
+    }
+
+    .light .trading-card {
+      background: rgba(255, 255, 255, 0.95);
+      border: 1px solid rgba(229, 231, 235, 0.3);
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1),
+        0 20px 25px -5px rgba(0, 0, 0, 0.04),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    }
+
+    .step-indicator {
+      position: relative;
+      z-index: 1;
+    }
+
+    .step-indicator::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: linear-gradient(
+        90deg,
+        transparent 0%,
+        rgba(79, 70, 229, 0.3) 50%,
+        transparent 100%
+      );
+      transform: translateY(-50%);
+      z-index: -1;
+    }
+
+    .skiptranslate {
+      display: none !important;
+    }
+
+    body {
+      top: 0 !important;
+    }
+  </style>
+
+  <body
+    class="h-full bg-gray-300 font-sans antialiased transition-colors duration-300 text-gray-900"
+    x-data="{ darkMode: localStorage.theme === 'dark' || !localStorage.theme }"
+    :class="{ 'dark': darkMode }"
+    x-cloak=""
+  >
+    <!-- Theme Toggle (Hidden but accessible) -->
+    <div class="fixed top-4 right-4 z-50">
+      <button
+        x-data="{ darkMode: localStorage.getItem('theme') === 'dark' || !localStorage.getItem('theme') }"
+        @click="darkMode = !darkMode; localStorage.setItem('theme', darkMode ? 'dark' : 'light'); document.documentElement.classList.toggle('dark', darkMode)"
+        class="relative inline-flex items-center justify-center w-10 h-10 text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg transition-colors duration-150 backdrop-blur-sm"
+        :aria-pressed="darkMode"
+        x-cloak=""
+      >
+        <svg
+          x-cloak=""
+          x-show="!darkMode"
+          class="w-5 h-5"
+          fill="none"
+          stroke="currentColor"
+          viewbox="0 0 24 24"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 12.728l-.707-.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
+          ></path>
+        </svg>
+        <svg
+          x-cloak=""
+          x-show="darkMode"
+          class="w-5 h-5"
+          fill="none"
+          stroke="currentColor"
+          viewbox="0 0 24 24"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
+          ></path>
+        </svg>
+        <span
+          class="absolute inset-0 rounded-lg ring-2 ring-inset ring-transparent transition-colors duration-150 hover:ring-blue-400/20"
+        ></span>
+      </button>
+    </div>
+
+    <!-- Main Content Wrapper -->
+    <div class="relative min-h-screen overflow-hidden">
+      <!-- Content -->
+      <div class="relative z-10">
+        <!-- Fintech Trading Platform Login (Premium, component-free) -->
+        <div class="min-h-screen bg-gray-950 relative overflow-hidden">
+          <!-- soft grain -->
+          <div
+            class="pointer-events-none absolute inset-0 opacity-[.08] [background:radial-gradient(circle_at_10%_10%,#fff_1px,transparent_1px),radial-gradient(circle_at_90%_20%,#fff_1px,transparent_1px),radial-gradient(circle_at_30%_80%,#fff_1px,transparent_1px)] [background-size:16px_16px,18px_18px,22px_22px]"
+          ></div>
+          <!-- aurora glow -->
+          <div
+            class="pointer-events-none absolute -top-32 -left-24 w-[42rem] h-[42rem] rounded-full blur-[120px] opacity-20 bg-gradient-to-br from-blue-600 via-cyan-500 to-emerald-500"
+          ></div>
+          <div
+            class="pointer-events-none absolute -bottom-40 -right-32 w-[46rem] h-[46rem] rounded-full blur-[130px] opacity-20 bg-gradient-to-tr from-fuchsia-500 via-indigo-500 to-blue-500"
+          ></div>
+
+          <div
+            class="relative z-10 mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8"
+          >
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+              <!-- LEFT: Auth Card -->
+              <div
+                x-data="{
+                    showPassword:false,
+                    quickAtTop:true,
+                    reIcon(){ if (window.lucide) setTimeout(()=>lucide.createIcons(),0); },
+                    animateNums(){ for(const el of document.querySelectorAll('[data-count]')){ const end=+el.dataset.count; let v=0; const step=Math.max(10, Math.floor(end/40)); const tick=()=>{ v=Math.min(end, v+step); el.textContent=v.toLocaleString(); if(v<end) requestAnimationFrame(tick)}; tick(); } }
+                }"
+                x-init="animateNums(); reIcon()"
+                x-effect="reIcon()"
+                class="relative"
+              >
+                <!-- hidden Quick Access template (no Blade component) -->
+                <template x-ref="qa">
+                  <div class="flex justify-center gap-4">
+                    <button
+                      type="button"
+                      class="group relative inline-flex items-center justify-center w-14 h-14 rounded-2xl border border-white/10 bg-white/5 hover:bg-white/10 hover:border-blue-400/40 transition-all shadow-lg"
+                    >
+                      <i
+                        data-lucide="fingerprint"
+                        class="h-6 w-6 text-blue-300 group-hover:scale-110 transition-transform"
+                      ></i>
+                      <div
+                        class="absolute -bottom-12 left-1/2 -translate-x-1/2 bg-gray-900/90 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100"
+                      >
+                        Fingerprint
+                      </div>
+                    </button>
+                    <button
+                      type="button"
+                      class="group relative inline-flex items-center justify-center w-14 h-14 rounded-2xl border border-white/10 bg-white/5 hover:bg-white/10 hover:border-cyan-400/40 transition-all shadow-lg"
+                    >
+                      <i
+                        data-lucide="scan-face"
+                        class="h-6 w-6 text-cyan-300 group-hover:scale-110 transition-transform"
+                      ></i>
+                      <div
+                        class="absolute -bottom-12 left-1/2 -translate-x-1/2 bg-gray-900/90 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100"
+                      >
+                        Face ID
+                      </div>
+                    </button>
+                    <button
+                      type="button"
+                      class="group relative inline-flex items-center justify-center w-14 h-14 rounded-2xl border border-white/10 bg-white/5 hover:bg-white/10 hover:border-emerald-400/40 transition-all shadow-lg"
+                    >
+                      <i
+                        data-lucide="qr-code"
+                        class="h-6 w-6 text-emerald-300 group-hover:scale-110 transition-transform"
+                      ></i>
+                      <div
+                        class="absolute -bottom-12 left-1/2 -translate-x-1/2 bg-gray-900/90 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100"
+                      >
+                        QR Code
+                      </div>
+                    </button>
+                  </div>
+                </template>
+
+                <!-- glass frame -->
+                <div
+                  class="rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl shadow-[0_10px_30px_rgba(0,0,0,.45)]"
+                >
+                  <div class="p-6 sm:p-8">
+                    <!-- Status Alert -->
+
+                    <!-- Header -->
+                    <div class="text-center mb-8">
+                      <div class="mb-5 flex items-center justify-center">
+                        <img
+                          src="storage/app/public/photos/dYO5FpXn1XJ1YxYkwMEA5LF24Z0OyDgKwK5B6Sum.png"
+                          class="h-14 w-auto drop-shadow-[0_8px_24px_rgba(0,0,0,.45)]"
+                          alt="smartmineinvest"
+                        />
+                      </div>
+                      <h1
+                        class="text-2xl sm:text-3xl font-extrabold tracking-tight text-white"
+                      >
+                        Welcome Back
+                      </h1>
+                      <p class="mt-2 text-sm sm:text-base text-gray-300">
+                        Access your
+                        <span
+                          class="font-semibold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400"
+                          >trading dashboard</span
+                        >
+                      </p>
+
+                      <!-- Mini trust row -->
+                      <div
+                        class="mt-6 grid grid-cols-3 gap-3 text-[11px] sm:text-xs"
+                      >
+                        <div
+                          class="rounded-xl border border-white/10 bg-white/5 px-3 py-2"
+                        >
+                          <div
+                            class="flex items-center justify-center gap-1 text-emerald-400"
+                          >
+                            <span
+                              class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"
+                            ></span>
+                            Live
+                          </div>
+                          <div class="mt-1 text-gray-400 text-center">
+                            24/7 Markets
+                          </div>
+                        </div>
+                        <div
+                          class="rounded-xl border border-white/10 bg-white/5 px-3 py-2"
+                        >
+                          <div
+                            class="flex items-center justify-center gap-1 text-blue-300"
+                          >
+                            <i data-lucide="zap" class="h-3.5 w-3.5"></i> Fast
+                          </div>
+                          <div class="mt-1 text-gray-400 text-center">
+                            Execution
+                          </div>
+                        </div>
+                        <div
+                          class="rounded-xl border border-white/10 bg-white/5 px-3 py-2"
+                        >
+                          <div
+                            class="flex items-center justify-center gap-1 text-cyan-300"
+                          >
+                            <i data-lucide="shield" class="h-3.5 w-3.5"></i>
+                            Secure
+                          </div>
+                          <div class="mt-1 text-gray-400 text-center">
+                            Platform
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Quick Access toggle -->
+                    <div class="mb-4 flex items-center justify-between">
+                      <div
+                        class="flex items-center gap-2 text-xs text-gray-400"
+                      >
+                        <i
+                          data-lucide="lock-keyhole"
+                          class="w-4 h-4 text-emerald-400"
+                        ></i>
+                        <span
+                          >Agency-grade controls: 2FA • FIDO2 • AES-256</span
+                        >
+                      </div>
+                      <button
+                        type="button"
+                        @click="quickAtTop=!quickAtTop"
+                        class="inline-flex items-center gap-1.5 text-[11px] font-semibold text-blue-300 hover:text-blue-200"
+                      >
+                        <i data-lucide="arrow-up-down" class="w-4 h-4"></i>
+                        Pin Quick Access
+                        <span
+                          class="opacity-70"
+                          x-text="quickAtTop ? '(bottom)' : '(top)'"
+                        ></span>
+                      </button>
+                    </div>
+
+                    <!-- Quick Access (TOP position) -->
+                    <template x-if="quickAtTop === false">
+                      <div
+                        class="mb-6"
+                        x-cloak=""
+                        x-html="$refs.qa.innerHTML"
+                      ></div>
+                    </template>
+
+                    <!-- Error Messages -->
+
+                    <!-- Login Form -->
+                    <form
+                      action="https://smartmineinvest.com/login"
+                      method="post"
+                      class="space-y-6"
+                    >
+                      <input
+                        type="hidden"
+                        name="_token"
+                        value="qPOr2R7aHP2K1Dx4msEGrGZqPxZApJYO3ICipbRd"
+                      />
+                      <!-- Email Field -->
+                      <div class="space-y-2">
+                        <label
+                          for="email"
+                          class="block text-sm font-semibold text-gray-200"
+                        >
+                          Email Address or Username
+                        </label>
+                        <div class="relative group">
+                          <div
+                            class="absolute inset-y-0 left-0 flex items-center pl-4"
+                          >
+                            <i
+                              data-lucide="mail"
+                              class="h-5 w-5 text-gray-400 group-focus-within:text-blue-300 transition-colors"
+                            ></i>
+                          </div>
+                          <input
+                            type="text"
+                            name="email"
+                            id="email"
+                            required=""
+                            class="block w-full rounded-2xl border border-white/10 bg-white/5 pl-12 pr-4 py-4 text-white placeholder-gray-400 focus:border-blue-400 focus:ring-2 focus:ring-blue-400/25 focus:bg-white/10 transition-all text-sm font-medium"
+                            placeholder="your.email@example.com"
+                            value=""
+                          />
+                        </div>
+                      </div>
+
+                      <!-- Password Field -->
+                      <div class="space-y-2">
+                        <label
+                          for="password"
+                          class="block text-sm font-semibold text-gray-200"
+                        >
+                          Password
+                        </label>
+                        <div class="relative group">
+                          <div
+                            class="absolute inset-y-0 left-0 flex items-center pl-4"
+                          >
+                            <i
+                              data-lucide="lock"
+                              class="h-5 w-5 text-gray-400 group-focus-within:text-blue-300 transition-colors"
+                            ></i>
+                          </div>
+                          <input
+                            :type="showPassword ? 'text' : 'password'"
+                            name="password"
+                            id="password"
+                            required=""
+                            class="block w-full rounded-2xl border border-white/10 bg-white/5 pl-12 pr-12 py-4 text-white placeholder-gray-400 focus:border-blue-400 focus:ring-2 focus:ring-blue-400/25 focus:bg-white/10 transition-all text-sm font-medium"
+                            placeholder="Enter your password"
+                          />
+                          <button
+                            type="button"
+                            @click="showPassword = !showPassword"
+                            class="absolute inset-y-0 right-0 flex items-center pr-4 text-gray-400 hover:text-blue-300"
+                          >
+                            <i
+                              data-lucide="eye"
+                              class="h-5 w-5"
+                              x-show="!showPassword"
+                            ></i>
+                            <i
+                              data-lucide="eye-off"
+                              class="h-5 w-5"
+                              x-show="showPassword"
+                              x-cloak=""
+                            ></i>
+                          </button>
+                        </div>
+                      </div>
+
+                      <!-- Remember & Forgot -->
+                      <div class="flex items-center justify-between text-sm">
+                        <label
+                          class="inline-flex items-center gap-3 text-gray-300"
+                        >
+                          <input
+                            type="checkbox"
+                            name="remember"
+                            id="remember"
+                            class="h-4 w-4 rounded border-white/10 bg-white/5 text-blue-500 focus:ring-2 focus:ring-blue-400/25"
+                          />
+                          Remember me
+                        </label>
+                        <a
+                          href="forgot-password.html"
+                          class="text-blue-300 hover:text-blue-200 underline underline-offset-2"
+                          >Forgot password?</a
+                        >
+                      </div>
+
+                      <!-- CTA -->
+                      <div class="pt-2">
+                        <button
+                          type="submit"
+                          class="group relative flex w-full justify-center items-center gap-3 rounded-2xl bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 px-6 py-4 text-base font-extrabold text-white transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-blue-400/40"
+                        >
+                          <i data-lucide="log-in" class="h-5 w-5"></i>
+                          <span>Access Dashboard</span>
+                          <i
+                            data-lucide="arrow-right"
+                            class="h-4 w-4 group-hover:translate-x-1 transition-transform"
+                          ></i>
+                        </button>
+                      </div>
+                    </form>
+
+                    <!-- Quick Access (BOTTOM position) -->
+                    <template x-if="quickAtTop === true">
+                      <div
+                        class="mt-8"
+                        x-cloak=""
+                        x-html="$refs.qa.innerHTML"
+                      ></div>
+                    </template>
+
+                    <!-- Security + Compliance Badges -->
+                    <div class="mt-10">
+                      <div
+                        class="grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs"
+                      >
+                        <div
+                          class="rounded-2xl border border-white/10 bg-white/5 p-3"
+                        >
+                          <div class="flex items-center gap-2 text-emerald-300">
+                            <i data-lucide="shield-check" class="w-4 h-4"></i>
+                            AES-256 / TLS1.3
+                          </div>
+                          <p class="mt-1 text-gray-400">
+                            Encrypted at rest & in transit
+                          </p>
+                        </div>
+                        <div
+                          class="rounded-2xl border border-white/10 bg-white/5 p-3"
+                        >
+                          <div class="flex items-center gap-2 text-blue-300">
+                            <i data-lucide="key-round" class="w-4 h-4"></i>
+                            FIDO2 / 2FA
+                          </div>
+                          <p class="mt-1 text-gray-400">
+                            Passkeys & OTP enforcement
+                          </p>
+                        </div>
+                        <div
+                          class="rounded-2xl border border-white/10 bg-white/5 p-3"
+                        >
+                          <div class="flex items-center gap-2 text-cyan-300">
+                            <i data-lucide="badge-check" class="w-4 h-4"></i>
+                            SOC 2 • ISO 27001
+                          </div>
+                          <p class="mt-1 text-gray-400">
+                            Agency-grade standards
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Footer -->
+                    <div class="mt-8 text-center space-y-6">
+                      <div class="text-sm">
+                        <span class="text-gray-300">New to trading? </span>
+                        <a
+                          href="register.html"
+                          class="font-semibold text-blue-300 hover:text-blue-200 underline underline-offset-2"
+                          >Create your account</a
+                        >
+                      </div>
+
+                      <div
+                        class="flex items-center justify-center gap-6 py-3 text-xs text-gray-400"
+                      >
+                        <div class="flex items-center gap-1">
+                          <i
+                            data-lucide="shield"
+                            class="w-3.5 h-3.5 text-emerald-400"
+                          ></i>
+                          SSL Secured
+                        </div>
+                        <div class="flex items-center gap-1">
+                          <i
+                            data-lucide="lock"
+                            class="w-3.5 h-3.5 text-blue-300"
+                          ></i>
+                          256-bit Encryption
+                        </div>
+                        <div class="flex items-center gap-1">
+                          <i
+                            data-lucide="award"
+                            class="w-3.5 h-3.5 text-cyan-300"
+                          ></i>
+                          Regulated
+                        </div>
+                      </div>
+
+                      <p class="text-xs text-gray-500">
+                        © 2025 smartmineinvest. All rights reserved.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- RIGHT: Insights (no Market Snapshot) -->
+              <div class="space-y-6">
+                <!-- Security Narrative -->
+                <div
+                  class="rounded-3xl border border-white/10 bg-gradient-to-br from-emerald-500/10 to-blue-500/10 backdrop-blur-xl p-6"
+                >
+                  <div class="flex items-start gap-3">
+                    <i
+                      data-lucide="shield-plus"
+                      class="w-5 h-5 text-emerald-300 flex-shrink-0"
+                    ></i>
+                    <div>
+                      <h4 class="text-sm font-semibold text-white">
+                        Tightened Agency-Grade Security
+                      </h4>
+                      <p class="mt-1 text-xs text-gray-300">
+                        Hardware keys (FIDO2), enforced 2FA, IP/device checks,
+                        and anomaly detection guard your account before, during,
+                        and after login. Rate-limited endpoints with bot
+                        screening keep brute-force out.
+                      </p>
+                      <ul
+                        class="mt-3 grid grid-cols-2 gap-2 text-[11px] text-gray-300"
+                      >
+                        <li class="flex items-center gap-2">
+                          <i
+                            data-lucide="scan-line"
+                            class="w-4 h-4 text-cyan-300"
+                          ></i>
+                          Device reputation
+                        </li>
+                        <li class="flex items-center gap-2">
+                          <i
+                            data-lucide="fingerprint"
+                            class="w-4 h-4 text-blue-300"
+                          ></i>
+                          Biometric quick-access
+                        </li>
+                        <li class="flex items-center gap-2">
+                          <i
+                            data-lucide="key-square"
+                            class="w-4 h-4 text-emerald-300"
+                          ></i>
+                          Passkeys / WebAuthn
+                        </li>
+                        <li class="flex items-center gap-2">
+                          <i
+                            data-lucide="alarm-check"
+                            class="w-4 h-4 text-violet-300"
+                          ></i>
+                          Suspicious login alerts
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Quick Tips -->
+                <div
+                  class="rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl p-6"
+                >
+                  <h4 class="text-sm font-semibold text-white">Pro Tips</h4>
+                  <ul class="mt-3 space-y-3 text-xs text-gray-300">
+                    <li class="flex items-start gap-2">
+                      <i
+                        data-lucide="check-circle-2"
+                        class="w-4 h-4 text-emerald-300 mt-0.5"
+                      ></i>
+                      Enable <strong>Passkeys</strong> for one-tap login on
+                      supported devices.
+                    </li>
+                    <li class="flex items-start gap-2">
+                      <i
+                        data-lucide="check-circle-2"
+                        class="w-4 h-4 text-emerald-300 mt-0.5"
+                      ></i>
+                      Use the <strong>QR Code</strong> quick access on your
+                      mobile to pair sessions securely.
+                    </li>
+                    <li class="flex items-start gap-2">
+                      <i
+                        data-lucide="check-circle-2"
+                        class="w-4 h-4 text-emerald-300 mt-0.5"
+                      ></i>
+                      Turn on <strong>login notifications</strong> in Profile →
+                      Security.
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- Compliance strip -->
+                <div
+                  class="rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl p-5"
+                >
+                  <div
+                    class="flex flex-wrap items-center justify-between gap-4"
+                  >
+                    <div class="flex items-center gap-2 text-xs text-gray-300">
+                      <i
+                        data-lucide="file-check-2"
+                        class="w-4 h-4 text-cyan-300"
+                      ></i>
+                      PCI-DSS Ready
+                    </div>
+                    <div class="flex items-center gap-2 text-xs text-gray-300">
+                      <i data-lucide="scan" class="w-4 h-4 text-blue-300"></i>
+                      Continuous Vulnerability Scan
+                    </div>
+                    <div class="flex items-center gap-2 text-xs text-gray-300">
+                      <i
+                        data-lucide="server-cog"
+                        class="w-4 h-4 text-emerald-300"
+                      ></i>
+                      Segregated Infrastructure
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /RIGHT -->
+            </div>
+          </div>
+        </div>
+
+        <script>
+          document.addEventListener("DOMContentLoaded", function () {
+            // Auto-focus email field
+            const emailField = document.getElementById("email");
+            if (emailField) emailField.focus();
+
+            // Lucide icons
+            if (typeof lucide !== "undefined") {
+              lucide.createIcons();
+            }
+          });
+
+          // Re-initialize icons after Alpine updates
+          document.addEventListener("alpine:updated", () => {
+            if (typeof lucide !== "undefined") {
+              lucide.createIcons();
+            }
+          });
+        </script>
+      </div>
+    </div>
+
+    <!-- Professional Trading Ticker -->
+    <div
+      class="fixed bottom-0 left-0 right-0 bg-white/80 dark:bg-gray-900/90 backdrop-blur-md border-t border-gray-200/50 dark:border-gray-700/50 z-40"
+    >
+      <div class="tradingview-widget-container">
+        <div class="tradingview-widget-container__widget"></div>
+        <!--<script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>-->
+        <!--{-->
+        <!--    "symbols": [-->
+        <!--        {"proName": "BINANCE:BTCUSDT", "title": "BTC/USDT"},-->
+        <!--        {"proName": "BINANCE:ETHUSDT", "title": "ETH/USDT"},-->
+        <!--        {"proName": "FX:EURUSD", "title": "EUR/USD"},-->
+        <!--        {"proName": "FX:GBPUSD", "title": "GBP/USD"},-->
+        <!--        {"proName": "FX:USDJPY", "title": "USD/JPY"},-->
+        <!--        {"proName": "NASDAQ:AAPL", "title": "APPLE"},-->
+        <!--        {"proName": "TVC:GOLD", "title": "GOLD"}-->
+        <!--    ],-->
+        <!--    "showSymbolLogo": true,-->
+        <!--    "colorTheme": "dark",-->
+        <!--    "isTransparent": true,-->
+        <!--    "displayMode": "adaptive",-->
+        <!--    "locale": "en"-->
+        <!--}-->
+        <!--</script>-->
+        <div class="gtranslate_wrapper"></div>
+        <script>
+          window.gtranslateSettings = {
+            default_language: "en",
+            alt_flags: { en: "usa" },
+            wrapper_selector: ".gtranslate_wrapper",
+            flag_style: "3d",
+          };
+        </script>
+        <script src="widgets/latest/float.js" defer=""></script>
+      </div>
+    </div>
+
+    <!-- Initialize Scripts -->
+    <script>
+      // Set dark mode as default if no preference is stored
+      if (!localStorage.getItem("theme")) {
+        localStorage.setItem("theme", "dark");
+        document.documentElement.classList.add("dark");
+      }
+
+      // Initialize theme
+      document.addEventListener("alpine:init", () => {
+        Alpine.store("theme", {
+          init() {
+            // Default to dark if no preference is set
+            this.darkMode =
+              localStorage.getItem("theme") === "dark" ||
+              !localStorage.getItem("theme");
+            this.updateTheme();
+          },
+          darkMode: true, // Set default to true
+          toggle() {
+            this.darkMode = !this.darkMode;
+            this.updateTheme();
+          },
+          updateTheme() {
+            localStorage.setItem("theme", this.darkMode ? "dark" : "light");
+            document.documentElement.classList.toggle("dark", this.darkMode);
+          },
+        });
+      });
+
+      // Initialize Lucide icons
+      document.addEventListener("DOMContentLoaded", () => {
+        if (typeof lucide !== "undefined") {
+          lucide.createIcons();
+        }
+      });
+
+      // Re-initialize icons after Alpine updates
+      document.addEventListener("alpine:updated", () => {
+        if (typeof lucide !== "undefined") {
+          lucide.createIcons();
+        }
+      });
+    </script>
+    <!-- Language Selector -->
+    <div class="gtranslate_wrapper"></div>
+    <script>
+      window.gtranslateSettings = {
+        default_language: "en",
+        alt_flags: { en: "usa" },
+        wrapper_selector: ".gtranslate_wrapper",
+        flag_style: "3d",
+      };
+    </script>
+    <script src="widgets/latest/float.js" defer=""></script>
+    <!-- Language Selector -->
+    <!--<div class="gtranslate_wrapper"></div>
+<script>
+    window.gtranslateSettings = {
+        default_language: "en",
+        alt_flags:{"en":"usa"},
+        wrapper_selector: ".gtranslate_wrapper",
+        flag_style: "3d",
+    };
+</script>
+<script src="https://cdn.gtranslate.net/widgets/latest/float.js" defer></script>
+-->
+  </body>
+</html>
