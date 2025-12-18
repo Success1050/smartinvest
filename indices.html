@@ -16,9 +16,9 @@
         theme: {
           extend: {
             colors: {
-              primary: "#3B82F6",
+              primary: "#F97316",
               secondary: "#10B981",
-              accent: "#6366F1",
+              accent: "#F97316",
               warning: "#F59E0B",
               danger: "#EF4444",
               dark: {
@@ -79,7 +79,7 @@
       }
 
       .btn-primary {
-        @apply bg-primary hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition-all duration-200;
+        @apply bg-primary hover:bg-orange-600 text-[#0f0f0f] font-bold py-3 px-6 rounded-lg transition-all duration-200;
       }
 
       .btn-secondary {
@@ -215,11 +215,11 @@
             this.on = !this.on;
             if (this.on) {
               document.documentElement.classList.add("dark");
-              document.body.classList.add("bg-gray-900");
+              document.body.classList.add("bg-[#0f0f0f]");
               document.body.classList.remove("bg-gray-100");
             } else {
               document.documentElement.classList.remove("dark");
-              document.body.classList.remove("bg-gray-900");
+              document.body.classList.remove("bg-[#0f0f0f]");
               document.body.classList.add("bg-gray-100");
             }
             localStorage.setItem("darkMode", this.on ? "dark" : "light");
@@ -232,7 +232,7 @@
         const theme = localStorage.getItem("darkMode");
         if (theme === "light") {
           document.documentElement.classList.remove("dark");
-          document.body.classList.remove("bg-gray-900");
+          document.body.classList.remove("bg-[#0f0f0f]");
           document.body.classList.add("bg-gray-100");
           if (window.Alpine) {
             Alpine.store("darkMode").on = false;
@@ -243,7 +243,7 @@
   </head>
 
   <body
-    class="antialiased text-gray-200 bg-gray-900 font-sans min-h-screen flex flex-col"
+    class="antialiased text-gray-200 bg-[#0f0f0f] font-sans min-h-screen flex flex-col"
   >
     <!-- Accessibility Skip Link -->
     <a
@@ -254,7 +254,7 @@
     </a>
 
     <!-- Header -->
-    <header class="bg-gray-900 border-b border-gray-800 relative z-50">
+    <header class="bg-[#0f0f0f] border-b border-gray-800 relative z-50">
       <!-- Top Navigation Bar -->
       <div
         x-data="{ mobileMenuOpen: false }"
@@ -505,7 +505,7 @@
                 </a>
                 <a
                   href="register.html"
-                  class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md text-sm font-medium transition-colors"
+                  class="bg-orange-500 hover:bg-orange-600 text-[#0f0f0f] px-4 py-2 rounded-md text-sm font-medium transition-colors"
                 >
                   Sign up
                 </a>
@@ -737,7 +737,7 @@
                   </a>
                   <a
                     href="register.html"
-                    class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md text-sm font-medium"
+                    class="bg-orange-500 hover:bg-orange-600 text-[#0f0f0f] px-4 py-2 rounded-md text-sm font-medium"
                   >
                     Sign up
                   </a>
@@ -777,7 +777,7 @@
     <main id="main-content" class="flex-grow">
       <!-- Hero Section -->
       <section
-        class="relative overflow-hidden bg-gradient-to-br from-gray-900 to-gray-800"
+        class="relative overflow-hidden bg-gradient-to-br from-[#0f0f0f] to-gray-800"
       >
         <!-- Abstract Background Elements -->
         <div class="absolute inset-0 z-0 pointer-events-none opacity-20">
@@ -807,7 +807,7 @@
                     offset="50%"
                   ></stop>
                   <stop
-                    stop-color="#6366F1"
+                    stop-color="#F97316"
                     stop-opacity=".15"
                     offset="100%"
                   ></stop>
@@ -869,7 +869,7 @@
               <div class="mt-8 flex flex-wrap gap-4">
                 <a
                   href="#indices-table"
-                  class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 transition duration-300"
+                  class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-[#0f0f0f] bg-orange-500 hover:bg-orange-600 transition duration-300"
                 >
                   View Markets
                   <svg
@@ -984,15 +984,15 @@
 
                   <!-- Stats -->
                   <div class="grid grid-cols-3 gap-2 mt-4">
-                    <div class="bg-gray-900 bg-opacity-50 p-2 rounded">
+                    <div class="bg-[#0f0f0f] bg-opacity-50 p-2 rounded">
                       <div class="text-xs text-gray-400">Open</div>
                       <div class="text-sm text-white">4,552.10</div>
                     </div>
-                    <div class="bg-gray-900 bg-opacity-50 p-2 rounded">
+                    <div class="bg-[#0f0f0f] bg-opacity-50 p-2 rounded">
                       <div class="text-xs text-gray-400">High</div>
                       <div class="text-sm text-white">4,575.28</div>
                     </div>
-                    <div class="bg-gray-900 bg-opacity-50 p-2 rounded">
+                    <div class="bg-[#0f0f0f] bg-opacity-50 p-2 rounded">
                       <div class="text-xs text-gray-400">Low</div>
                       <div class="text-sm text-white">4,545.36</div>
                     </div>
@@ -1007,7 +1007,7 @@
       <!-- Indices Table Section -->
       <section
         id="indices-table"
-        class="py-16 bg-gradient-to-b from-gray-900 to-gray-800 relative"
+        class="py-16 bg-gradient-to-b from-[#0f0f0f] to-gray-800 relative"
       >
         <!-- Decorative background pattern -->
         <div class="absolute inset-0 z-0 opacity-10 pointer-events-none">
@@ -1548,7 +1548,7 @@
       </script>
 
       <!-- Indices Trading Features Section -->
-      <section class="py-16 bg-gray-900">
+      <section class="py-16 bg-[#0f0f0f]">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div class="text-center mb-12">
             <div
@@ -1570,7 +1570,7 @@
               class="bg-gray-800 bg-opacity-50 backdrop-blur-sm border border-gray-700 rounded-xl p-6 transform transition-all duration-300 hover:translate-y-[-5px] hover:shadow-lg"
             >
               <div
-                class="w-12 h-12 bg-blue-600 bg-opacity-20 rounded-lg flex items-center justify-center mb-4"
+                class="w-12 h-12 bg-orange-500 bg-opacity-20 rounded-lg flex items-center justify-center mb-4"
               >
                 <svg
                   class="w-6 h-6 text-blue-400"
@@ -1602,7 +1602,7 @@
               class="bg-gray-800 bg-opacity-50 backdrop-blur-sm border border-gray-700 rounded-xl p-6 transform transition-all duration-300 hover:translate-y-[-5px] hover:shadow-lg"
             >
               <div
-                class="w-12 h-12 bg-blue-600 bg-opacity-20 rounded-lg flex items-center justify-center mb-4"
+                class="w-12 h-12 bg-orange-500 bg-opacity-20 rounded-lg flex items-center justify-center mb-4"
               >
                 <svg
                   class="w-6 h-6 text-blue-400"
@@ -1634,7 +1634,7 @@
               class="bg-gray-800 bg-opacity-50 backdrop-blur-sm border border-gray-700 rounded-xl p-6 transform transition-all duration-300 hover:translate-y-[-5px] hover:shadow-lg"
             >
               <div
-                class="w-12 h-12 bg-blue-600 bg-opacity-20 rounded-lg flex items-center justify-center mb-4"
+                class="w-12 h-12 bg-orange-500 bg-opacity-20 rounded-lg flex items-center justify-center mb-4"
               >
                 <svg
                   class="w-6 h-6 text-blue-400"
@@ -1673,7 +1673,7 @@
       </script>
 
       <!-- Trading Advantages Section -->
-      <section class="py-16 bg-gradient-to-b from-gray-800 to-gray-900">
+      <section class="py-16 bg-gradient-to-b from-gray-800 to-[#0f0f0f]">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div
@@ -1695,11 +1695,11 @@
 
                 <!-- Interactive Chart Overlay -->
                 <div
-                  class="absolute inset-0 bg-gradient-to-br from-gray-900/70 to-transparent flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300"
+                  class="absolute inset-0 bg-gradient-to-br from-[#0f0f0f]/70 to-transparent flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300"
                 >
                   <div class="text-center">
                     <div
-                      class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-blue-600 bg-opacity-30 mb-4"
+                      class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-orange-500 bg-opacity-30 mb-4"
                     >
                       <svg
                         class="w-8 h-8 text-blue-400"
@@ -1833,7 +1833,7 @@
                 <a
                   href="trading-conditions.html"
                   title="Learn About Trading Commissions"
-                  class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 transition duration-300"
+                  class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-[#0f0f0f] bg-orange-500 hover:bg-orange-600 transition duration-300"
                 >
                   Trading Conditions
                   <svg
@@ -1858,7 +1858,7 @@
       </section>
 
       <!-- CTA Section -->
-      <section class="py-16 bg-gray-900">
+      <section class="py-16 bg-[#0f0f0f]">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div
             class="relative overflow-hidden rounded-3xl bg-gradient-to-r from-blue-600 to-indigo-600"
@@ -2469,7 +2469,56 @@
         ></noscript
       >
     </div>
-  </body>
+  <style>
+  /* Scroll Animation Classes */
+  .scroll-hidden {
+    opacity: 0;
+    transition: all 1s ease-out;
+  }
+  .scroll-from-left {
+    transform: translateX(-100px);
+  }
+  .scroll-from-right {
+    transform: translateX(100px);
+  }
+  .scroll-visible {
+    opacity: 1;
+    transform: translateX(0) !important;
+  }
+  /* Ensure no overflow during animation */
+  body {
+    overflow-x: hidden;
+  }
+</style>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Select direct children of main, or sections if main missing
+    let targets = document.querySelectorAll('main > section, main > div');
+    if (targets.length === 0) {
+      targets = document.querySelectorAll('body > section');
+    }
+    
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('scroll-visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 }); // Trigger when 10% visible
+
+    targets.forEach((el, index) => {
+      el.classList.add('scroll-hidden');
+      if (index % 2 === 0) {
+        el.classList.add('scroll-from-left'); // Even: From Left
+      } else {
+        el.classList.add('scroll-from-right'); // Odd: From Right
+      }
+      observer.observe(el);
+    });
+  });
+</script>
+</body>
 </html>
 
 <!-- notification start -->
@@ -2588,3 +2637,7 @@
 
 <script type="text/javascript" src="jquery-1.12.0.min.js"></script>
 <!-- notification ends -->
+
+
+
+

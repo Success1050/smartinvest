@@ -16,9 +16,9 @@
         theme: {
           extend: {
             colors: {
-              primary: "#3B82F6",
+              primary: "#F97316",
               secondary: "#10B981",
-              accent: "#6366F1",
+              accent: "#F97316",
               warning: "#F59E0B",
               danger: "#EF4444",
               dark: {
@@ -79,7 +79,7 @@
       }
 
       .btn-primary {
-        @apply bg-primary hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition-all duration-200;
+        @apply bg-primary hover:bg-orange-600 text-[#0f0f0f] font-bold py-3 px-6 rounded-lg transition-all duration-200;
       }
 
       .btn-secondary {
@@ -215,11 +215,11 @@
             this.on = !this.on;
             if (this.on) {
               document.documentElement.classList.add("dark");
-              document.body.classList.add("bg-gray-900");
+              document.body.classList.add("bg-[#0f0f0f]");
               document.body.classList.remove("bg-gray-100");
             } else {
               document.documentElement.classList.remove("dark");
-              document.body.classList.remove("bg-gray-900");
+              document.body.classList.remove("bg-[#0f0f0f]");
               document.body.classList.add("bg-gray-100");
             }
             localStorage.setItem("darkMode", this.on ? "dark" : "light");
@@ -232,7 +232,7 @@
         const theme = localStorage.getItem("darkMode");
         if (theme === "light") {
           document.documentElement.classList.remove("dark");
-          document.body.classList.remove("bg-gray-900");
+          document.body.classList.remove("bg-[#0f0f0f]");
           document.body.classList.add("bg-gray-100");
           if (window.Alpine) {
             Alpine.store("darkMode").on = false;
@@ -243,7 +243,7 @@
   </head>
 
   <body
-    class="antialiased text-gray-200 bg-gray-900 font-sans min-h-screen flex flex-col"
+    class="antialiased text-gray-200 bg-[#0f0f0f] font-sans min-h-screen flex flex-col"
   >
     <!-- Accessibility Skip Link -->
     <a
@@ -254,7 +254,7 @@
     </a>
 
     <!-- Header -->
-    <header class="bg-gray-900 border-b border-gray-800 relative z-50">
+    <header class="bg-[#0f0f0f] border-b border-gray-800 relative z-50">
       <!-- Top Navigation Bar -->
       <div
         x-data="{ mobileMenuOpen: false }"
@@ -505,7 +505,7 @@
                 </a>
                 <a
                   href="register.html"
-                  class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md text-sm font-medium transition-colors"
+                  class="bg-orange-500 hover:bg-orange-600 text-[#0f0f0f] px-4 py-2 rounded-md text-sm font-medium transition-colors"
                 >
                   Sign up
                 </a>
@@ -737,7 +737,7 @@
                   </a>
                   <a
                     href="register.html"
-                    class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md text-sm font-medium"
+                    class="bg-orange-500 hover:bg-orange-600 text-[#0f0f0f] px-4 py-2 rounded-md text-sm font-medium"
                   >
                     Sign up
                   </a>
@@ -777,7 +777,7 @@
     <main id="main-content" class="flex-grow">
       <!-- Hero Section -->
       <section
-        class="relative overflow-hidden bg-gradient-to-br from-gray-900 to-gray-800"
+        class="relative overflow-hidden bg-gradient-to-br from-[#0f0f0f] to-gray-800"
       >
         <!-- Abstract Background Elements -->
         <div class="absolute inset-0 z-0">
@@ -820,7 +820,7 @@
               viewbox="0 0 800 800"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <g fill="none" stroke="#6366F1" stroke-width="2">
+              <g fill="none" stroke="#F97316" stroke-width="2">
                 <path
                   d="M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764"
                 ></path>
@@ -876,13 +876,13 @@
                 <div class="flex flex-wrap gap-4 mt-8">
                   <a
                     href="register.html"
-                    class="px-8 py-3 text-lg font-medium text-white transition-all duration-200 bg-blue-600 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-gray-900"
+                    class="px-8 py-3 text-lg font-medium text-[#0f0f0f] transition-all duration-200 bg-orange-500 rounded-lg hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 focus:ring-offset-[#0f0f0f]"
                   >
                     Create Account
                   </a>
                   <a
                     href="login.html"
-                    class="px-8 py-3 text-lg font-medium text-gray-200 transition-all duration-200 bg-dark-200 border border-gray-700 rounded-lg hover:bg-dark-100 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 focus:ring-offset-gray-900"
+                    class="px-8 py-3 text-lg font-medium text-gray-200 transition-all duration-200 bg-dark-200 border border-gray-700 rounded-lg hover:bg-dark-100 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 focus:ring-offset-[#0f0f0f]"
                   >
                     Login
                   </a>
@@ -896,7 +896,7 @@
                 class="relative overflow-hidden backdrop-blur-sm bg-opacity-60 bg-gray-800 rounded-2xl border border-gray-700 shadow-[0_0_25px_rgba(59,130,246,0.15)]"
               >
                 <div
-                  class="absolute top-0 right-0 w-32 h-32 bg-blue-600 rounded-full filter blur-3xl opacity-10 -mr-10 -mt-10"
+                  class="absolute top-0 right-0 w-32 h-32 bg-orange-500 rounded-full filter blur-3xl opacity-10 -mr-10 -mt-10"
                 ></div>
                 <div
                   class="absolute bottom-0 left-0 w-32 h-32 bg-blue-400 rounded-full filter blur-3xl opacity-10 -ml-10 -mb-10"
@@ -967,7 +967,7 @@
                 >
                   <div class="flex items-center space-x-2">
                     <div
-                      class="flex items-center justify-center w-8 h-8 bg-blue-600 bg-opacity-20 rounded-md"
+                      class="flex items-center justify-center w-8 h-8 bg-orange-500 bg-opacity-20 rounded-md"
                     >
                       <i class="fas fa-chart-line text-blue-400"></i>
                     </div>
@@ -1036,7 +1036,7 @@
                       </svg>
                     </button>
                     <button
-                      class="p-1.5 bg-blue-600 bg-opacity-50 hover:bg-opacity-80 rounded-md transition-all"
+                      class="p-1.5 bg-orange-500 bg-opacity-50 hover:bg-opacity-80 rounded-md transition-all"
                     >
                       <svg
                         class="w-4 h-4 text-white"
@@ -1262,7 +1262,7 @@
       </section>
 
       <!-- Market Analysis Section -->
-      <section class="py-16 bg-gray-900">
+      <section class="py-16 bg-[#0f0f0f]">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div class="mb-12 text-center">
             <span
@@ -1567,7 +1567,7 @@
                 <div class="mt-8 text-center">
                   <a
                     href="login.html"
-                    class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 shadow-lg transition duration-300 transform hover:-translate-y-1"
+                    class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-[#0f0f0f] bg-orange-500 hover:bg-orange-600 shadow-lg transition duration-300 transform hover:-translate-y-1"
                   >
                     Learn more about our services
                     <i class="fas fa-arrow-right ml-2"></i>
@@ -1601,7 +1601,7 @@
                 class="relative bg-dark-400 p-6 rounded-lg border border-gray-700 group-hover:border-blue-500 transition-all duration-300"
               >
                 <div
-                  class="w-12 h-12 bg-blue-600 bg-opacity-20 rounded-full flex items-center justify-center mb-4"
+                  class="w-12 h-12 bg-orange-500 bg-opacity-20 rounded-full flex items-center justify-center mb-4"
                 >
                   <i class="fas fa-globe text-blue-400 text-xl"></i>
                 </div>
@@ -1685,7 +1685,7 @@
                 class="relative bg-dark-400 p-6 rounded-lg border border-gray-700 group-hover:border-blue-500 transition-all duration-300"
               >
                 <div
-                  class="w-12 h-12 bg-blue-600 bg-opacity-20 rounded-full flex items-center justify-center mb-4"
+                  class="w-12 h-12 bg-orange-500 bg-opacity-20 rounded-full flex items-center justify-center mb-4"
                 >
                   <i class="fas fa-landmark text-blue-400 text-xl"></i>
                 </div>
@@ -1807,7 +1807,7 @@
                 class="h-24 bg-gradient-to-r from-blue-500 to-blue-700 flex items-center justify-center"
               >
                 <div
-                  class="h-16 w-16 bg-gray-900 rounded-full flex items-center justify-center border border-blue-400 shadow-lg"
+                  class="h-16 w-16 bg-[#0f0f0f] rounded-full flex items-center justify-center border border-blue-400 shadow-lg"
                 >
                   <span class="text-blue-400 text-3xl font-bold">XRP</span>
                 </div>
@@ -1844,7 +1844,7 @@
                 class="h-24 bg-gradient-to-r from-blue-800 to-indigo-800 flex items-center justify-center"
               >
                 <div
-                  class="h-16 w-16 bg-gray-900 rounded-full flex items-center justify-center border border-indigo-400 shadow-lg"
+                  class="h-16 w-16 bg-[#0f0f0f] rounded-full flex items-center justify-center border border-indigo-400 shadow-lg"
                 >
                   <span class="text-indigo-400 text-3xl font-bold">ADA</span>
                 </div>
@@ -1877,7 +1877,7 @@
           <div class="mt-10 text-center">
             <a
               href="cryptocurrencies.html"
-              class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 transition duration-150"
+              class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-[#0f0f0f] bg-orange-500 hover:bg-orange-600 transition duration-150"
             >
               View all cryptocurrencies
               <i class="fas fa-arrow-right ml-2"></i>
@@ -1938,7 +1938,7 @@
               <div class="flex flex-wrap gap-4 mt-4">
                 <a
                   href="for-traders.html"
-                  class="inline-flex items-center px-5 py-2 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 transition duration-150"
+                  class="inline-flex items-center px-5 py-2 border border-transparent text-base font-medium rounded-md text-[#0f0f0f] bg-orange-500 hover:bg-orange-600 transition duration-150"
                 >
                   Explore learning resources
                   <i class="fas fa-graduation-cap ml-2"></i>
@@ -2053,7 +2053,7 @@
                 <div class="mt-8">
                   <a
                     href="login.html"
-                    class="inline-flex items-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary hover:bg-blue-700 transition duration-150"
+                    class="inline-flex items-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary hover:bg-orange-600 transition duration-150"
                   >
                     View detailed conditions
                     <i class="fas fa-arrow-right ml-2"></i>
@@ -2266,7 +2266,7 @@
             <div class="mt-8 text-center">
               <a
                 href="about.html"
-                class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary hover:bg-blue-700 transition duration-150"
+                class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary hover:bg-orange-600 transition duration-150"
               >
                 Learn more about us
                 <i class="fas fa-arrow-right ml-2"></i>
@@ -2290,7 +2290,7 @@
 
 
 <!-- Pricing Plans Section -->
-      <section class="py-16 bg-gray-900" id="pricing">
+      <section class="py-16 bg-[#0f0f0f]" id="pricing">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div class="mb-12 text-center">
             <span
@@ -2328,7 +2328,7 @@
                 >
                   <!-- Card Header -->
                   <div
-                    class="h-24 bg-blue-600 flex items-center justify-center relative"
+                    class="h-24 bg-orange-500 flex items-center justify-center relative"
                   >
                     <div class="absolute inset-0 bg-pattern opacity-10"></div>
                     <h3
@@ -2457,7 +2457,7 @@
                     <!-- CTA Button -->
                     <a
                       href="login.html"
-                      class="block w-full px-4 py-3 font-medium text-center text-white bg-blue-600 hover:bg-blue-700 rounded-lg shadow-md transition duration-300 transform hover:-translate-y-1"
+                      class="block w-full px-4 py-3 font-medium text-center text-[#0f0f0f] bg-orange-500 hover:bg-orange-600 rounded-lg shadow-md transition duration-300 transform hover:-translate-y-1"
                     >
                       Select Plan
                     </a>
@@ -2478,7 +2478,7 @@
                 >
                   <!-- Card Header -->
                   <div
-                    class="h-24 bg-blue-600 flex items-center justify-center relative"
+                    class="h-24 bg-orange-500 flex items-center justify-center relative"
                   >
                     <div class="absolute inset-0 bg-pattern opacity-10"></div>
                     <h3
@@ -2607,7 +2607,7 @@
                     <!-- CTA Button -->
                     <a
                       href="login.html"
-                      class="block w-full px-4 py-3 font-medium text-center text-white bg-blue-600 hover:bg-blue-700 rounded-lg shadow-md transition duration-300 transform hover:-translate-y-1"
+                      class="block w-full px-4 py-3 font-medium text-center text-[#0f0f0f] bg-orange-500 hover:bg-orange-600 rounded-lg shadow-md transition duration-300 transform hover:-translate-y-1"
                     >
                       Select Plan
                     </a>
@@ -2628,7 +2628,7 @@
                 >
                   <!-- Card Header -->
                   <div
-                    class="h-24 bg-blue-600 flex items-center justify-center relative"
+                    class="h-24 bg-orange-500 flex items-center justify-center relative"
                   >
                     <div class="absolute inset-0 bg-pattern opacity-10"></div>
                     <h3
@@ -2757,7 +2757,7 @@
                     <!-- CTA Button -->
                     <a
                       href="login.html"
-                      class="block w-full px-4 py-3 font-medium text-center text-white bg-blue-600 hover:bg-blue-700 rounded-lg shadow-md transition duration-300 transform hover:-translate-y-1"
+                      class="block w-full px-4 py-3 font-medium text-center text-[#0f0f0f] bg-orange-500 hover:bg-orange-600 rounded-lg shadow-md transition duration-300 transform hover:-translate-y-1"
                     >
                       Select Plan
                     </a>
@@ -2778,7 +2778,7 @@
                 >
                   <!-- Card Header -->
                   <div
-                    class="h-24 bg-blue-600 flex items-center justify-center relative"
+                    class="h-24 bg-orange-500 flex items-center justify-center relative"
                   >
                     <div class="absolute inset-0 bg-pattern opacity-10"></div>
                     <h3
@@ -2907,7 +2907,7 @@
                     <!-- CTA Button -->
                     <a
                       href="login.html"
-                      class="block w-full px-4 py-3 font-medium text-center text-white bg-blue-600 hover:bg-blue-700 rounded-lg shadow-md transition duration-300 transform hover:-translate-y-1"
+                      class="block w-full px-4 py-3 font-medium text-center text-[#0f0f0f] bg-orange-500 hover:bg-orange-600 rounded-lg shadow-md transition duration-300 transform hover:-translate-y-1"
                     >
                       Select Plan
                     </a>
@@ -3137,7 +3137,7 @@
       </section>
 
       <!-- Trusted Brand Section -->
-      <section class="py-16 bg-gray-900">
+      <section class="py-16 bg-[#0f0f0f]">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div class="mb-12 text-center">
             <span
@@ -3216,7 +3216,7 @@
                   <li class="flex items-start">
                     <div class="flex-shrink-0 mt-1">
                       <span
-                        class="flex items-center justify-center w-8 h-8 rounded-full bg-blue-600 bg-opacity-20"
+                        class="flex items-center justify-center w-8 h-8 rounded-full bg-orange-500 bg-opacity-20"
                       >
                         <i class="fas fa-check text-blue-400"></i>
                       </span>
@@ -3232,7 +3232,7 @@
                   <li class="flex items-start">
                     <div class="flex-shrink-0 mt-1">
                       <span
-                        class="flex items-center justify-center w-8 h-8 rounded-full bg-blue-600 bg-opacity-20"
+                        class="flex items-center justify-center w-8 h-8 rounded-full bg-orange-500 bg-opacity-20"
                       >
                         <i class="fas fa-trophy text-blue-400"></i>
                       </span>
@@ -3250,7 +3250,7 @@
                   <li class="flex items-start">
                     <div class="flex-shrink-0 mt-1">
                       <span
-                        class="flex items-center justify-center w-8 h-8 rounded-full bg-blue-600 bg-opacity-20"
+                        class="flex items-center justify-center w-8 h-8 rounded-full bg-orange-500 bg-opacity-20"
                       >
                         <i class="fas fa-headset text-blue-400"></i>
                       </span>
@@ -3268,7 +3268,7 @@
                   <li class="flex items-start">
                     <div class="flex-shrink-0 mt-1">
                       <span
-                        class="flex items-center justify-center w-8 h-8 rounded-full bg-blue-600 bg-opacity-20"
+                        class="flex items-center justify-center w-8 h-8 rounded-full bg-orange-500 bg-opacity-20"
                       >
                         <i class="fas fa-shield-alt text-blue-400"></i>
                       </span>
@@ -3286,7 +3286,7 @@
                   <li class="flex items-start">
                     <div class="flex-shrink-0 mt-1">
                       <span
-                        class="flex items-center justify-center w-8 h-8 rounded-full bg-blue-600 bg-opacity-20"
+                        class="flex items-center justify-center w-8 h-8 rounded-full bg-orange-500 bg-opacity-20"
                       >
                         <i class="fas fa-user-tie text-blue-400"></i>
                       </span>
@@ -3304,7 +3304,7 @@
                 <div class="mt-8 text-center">
                   <a
                     href="login.html"
-                    class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 shadow-lg transition duration-300 transform hover:-translate-y-1"
+                    class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-[#0f0f0f] bg-orange-500 hover:bg-orange-600 shadow-lg transition duration-300 transform hover:-translate-y-1"
                   >
                     Learn More
                     <svg
@@ -3330,7 +3330,7 @@
       </section>
 
       <!-- How It Works Section -->
-      <section class="py-16 bg-gray-900">
+      <section class="py-16 bg-[#0f0f0f]">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div class="mb-12 text-center">
             <span
@@ -3359,7 +3359,7 @@
               >
                 <div class="flex justify-center mb-6">
                   <div
-                    class="w-20 h-20 bg-blue-600 rounded-full flex items-center justify-center text-white text-2xl font-bold shadow-lg"
+                    class="w-20 h-20 bg-orange-500 rounded-full flex items-center justify-center text-[#0f0f0f] text-2xl font-bold shadow-lg"
                   >
                     1
                   </div>
@@ -3377,7 +3377,7 @@
                 <div class="mt-auto text-center">
                   <a
                     href="register.html"
-                    class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 shadow-lg transition duration-300 transform hover:-translate-y-1"
+                    class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-[#0f0f0f] bg-orange-500 hover:bg-orange-600 shadow-lg transition duration-300 transform hover:-translate-y-1"
                   >
                     Get Started
                     <svg
@@ -3409,7 +3409,7 @@
               >
                 <div class="flex justify-center mb-6">
                   <div
-                    class="w-20 h-20 bg-blue-600 rounded-full flex items-center justify-center text-white text-2xl font-bold shadow-lg"
+                    class="w-20 h-20 bg-orange-500 rounded-full flex items-center justify-center text-[#0f0f0f] text-2xl font-bold shadow-lg"
                   >
                     2
                   </div>
@@ -3427,7 +3427,7 @@
                 <div class="mt-auto text-center">
                   <a
                     href="login.html"
-                    class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 shadow-lg transition duration-300 transform hover:-translate-y-1"
+                    class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-[#0f0f0f] bg-orange-500 hover:bg-orange-600 shadow-lg transition duration-300 transform hover:-translate-y-1"
                   >
                     Explore Markets
                     <svg
@@ -3459,7 +3459,7 @@
               >
                 <div class="flex justify-center mb-6">
                   <div
-                    class="w-20 h-20 bg-blue-600 rounded-full flex items-center justify-center text-white text-2xl font-bold shadow-lg"
+                    class="w-20 h-20 bg-orange-500 rounded-full flex items-center justify-center text-[#0f0f0f] text-2xl font-bold shadow-lg"
                   >
                     3
                   </div>
@@ -3477,7 +3477,7 @@
                 <div class="mt-auto text-center">
                   <a
                     href="login.html"
-                    class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 shadow-lg transition duration-300 transform hover:-translate-y-1"
+                    class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-[#0f0f0f] bg-orange-500 hover:bg-orange-600 shadow-lg transition duration-300 transform hover:-translate-y-1"
                   >
                     Learn More
                     <svg
@@ -3503,7 +3503,7 @@
       </section>
 
       <!-- Premium Trading Experience Section -->
-      <section class="py-16 bg-gray-900">
+      <section class="py-16 bg-[#0f0f0f]">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div class="mb-12 text-center">
             <span
@@ -3539,7 +3539,7 @@
                 class="relative z-10 rounded-xl w-full transform transition-all duration-500 group-hover:scale-105"
               />
               <div
-                class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-gray-900 p-4"
+                class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-[#0f0f0f] p-4"
               >
                 <p class="text-sm text-blue-300 text-center">
                   Competitive commission structure for all traders
@@ -3566,7 +3566,7 @@
                 <div class="flex items-start">
                   <div class="flex-shrink-0 mt-1">
                     <span
-                      class="flex items-center justify-center w-6 h-6 rounded-full bg-blue-600 bg-opacity-20"
+                      class="flex items-center justify-center w-6 h-6 rounded-full bg-orange-500 bg-opacity-20"
                     >
                       <i class="fas fa-check text-blue-400 text-sm"></i>
                     </span>
@@ -3578,7 +3578,7 @@
                 <div class="flex items-start">
                   <div class="flex-shrink-0 mt-1">
                     <span
-                      class="flex items-center justify-center w-6 h-6 rounded-full bg-blue-600 bg-opacity-20"
+                      class="flex items-center justify-center w-6 h-6 rounded-full bg-orange-500 bg-opacity-20"
                     >
                       <i class="fas fa-check text-blue-400 text-sm"></i>
                     </span>
@@ -3590,7 +3590,7 @@
                 <div class="flex items-start">
                   <div class="flex-shrink-0 mt-1">
                     <span
-                      class="flex items-center justify-center w-6 h-6 rounded-full bg-blue-600 bg-opacity-20"
+                      class="flex items-center justify-center w-6 h-6 rounded-full bg-orange-500 bg-opacity-20"
                     >
                       <i class="fas fa-check text-blue-400 text-sm"></i>
                     </span>
@@ -3602,7 +3602,7 @@
                 <div class="flex items-start">
                   <div class="flex-shrink-0 mt-1">
                     <span
-                      class="flex items-center justify-center w-6 h-6 rounded-full bg-blue-600 bg-opacity-20"
+                      class="flex items-center justify-center w-6 h-6 rounded-full bg-orange-500 bg-opacity-20"
                     >
                       <i class="fas fa-check text-blue-400 text-sm"></i>
                     </span>
@@ -3615,7 +3615,7 @@
               <div class="mt-6">
                 <a
                   href="login.html"
-                  class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 shadow-lg transition duration-300 transform hover:-translate-y-1"
+                  class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-[#0f0f0f] bg-orange-500 hover:bg-orange-600 shadow-lg transition duration-300 transform hover:-translate-y-1"
                 >
                   Learn About Our Commissions
                   <svg
@@ -3664,7 +3664,7 @@
               class="bg-gray-800 bg-opacity-80 rounded-xl border border-gray-700 hover:border-blue-600 p-6 shadow-lg transition-all duration-300 transform hover:-translate-y-1 hover:shadow-blue-900/20 h-full"
             >
               <div
-                class="w-14 h-14 bg-blue-600 bg-opacity-20 rounded-full flex items-center justify-center mb-4"
+                class="w-14 h-14 bg-orange-500 bg-opacity-20 rounded-full flex items-center justify-center mb-4"
               >
                 <i class="fas fa-chart-line text-blue-400 text-xl"></i>
               </div>
@@ -3694,7 +3694,7 @@
               class="bg-gray-800 bg-opacity-80 rounded-xl border border-gray-700 hover:border-blue-600 p-6 shadow-lg transition-all duration-300 transform hover:-translate-y-1 hover:shadow-blue-900/20 h-full"
             >
               <div
-                class="w-14 h-14 bg-blue-600 bg-opacity-20 rounded-full flex items-center justify-center mb-4"
+                class="w-14 h-14 bg-orange-500 bg-opacity-20 rounded-full flex items-center justify-center mb-4"
               >
                 <i class="fas fa-trophy text-blue-400 text-xl"></i>
               </div>
@@ -3726,7 +3726,7 @@
               class="bg-gray-800 bg-opacity-80 rounded-xl border border-gray-700 hover:border-blue-600 p-6 shadow-lg transition-all duration-300 transform hover:-translate-y-1 hover:shadow-blue-900/20 h-full"
             >
               <div
-                class="w-14 h-14 bg-blue-600 bg-opacity-20 rounded-full flex items-center justify-center mb-4"
+                class="w-14 h-14 bg-orange-500 bg-opacity-20 rounded-full flex items-center justify-center mb-4"
               >
                 <i class="fas fa-hand-holding-usd text-blue-400 text-xl"></i>
               </div>
@@ -3757,7 +3757,7 @@
           <div class="mt-12 text-center">
             <a
               href="register.html"
-              class="inline-flex items-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 shadow-lg transition duration-300 transform hover:-translate-y-1"
+              class="inline-flex items-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-[#0f0f0f] bg-orange-500 hover:bg-orange-600 shadow-lg transition duration-300 transform hover:-translate-y-1"
             >
               Start Trading Now
               <svg
@@ -3781,7 +3781,7 @@
 
       <!-- Client Testimonials Section -->
       <section
-        class="py-16 bg-gray-900 relative overflow-hidden"
+        class="py-16 bg-[#0f0f0f] relative overflow-hidden"
         x-data="{ activeTestimonial: null }"
       >
         <!-- Background Effects -->
@@ -4400,7 +4400,7 @@
       </section>
 
       <!-- Cryptocurrency Logos Section - Dark Mode -->
-      <section class="bg-gray-900 py-10">
+      <section class="bg-[#0f0f0f] py-10">
         <div class="container mx-auto px-4">
           <div class="max-w-7xl mx-auto">
             <div
@@ -4962,7 +4962,56 @@
         ></noscript
       >
     </div>
-  </body>
+  <style>
+  /* Scroll Animation Classes */
+  .scroll-hidden {
+    opacity: 0;
+    transition: all 1s ease-out;
+  }
+  .scroll-from-left {
+    transform: translateX(-100px);
+  }
+  .scroll-from-right {
+    transform: translateX(100px);
+  }
+  .scroll-visible {
+    opacity: 1;
+    transform: translateX(0) !important;
+  }
+  /* Ensure no overflow during animation */
+  body {
+    overflow-x: hidden;
+  }
+</style>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Select direct children of main, or sections if main missing
+    let targets = document.querySelectorAll('main > section, main > div');
+    if (targets.length === 0) {
+      targets = document.querySelectorAll('body > section');
+    }
+    
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('scroll-visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 }); // Trigger when 10% visible
+
+    targets.forEach((el, index) => {
+      el.classList.add('scroll-hidden');
+      if (index % 2 === 0) {
+        el.classList.add('scroll-from-left'); // Even: From Left
+      } else {
+        el.classList.add('scroll-from-right'); // Odd: From Right
+      }
+      observer.observe(el);
+    });
+  });
+</script>
+</body>
 </html>
 
 <!-- notification start -->
@@ -5081,3 +5130,6 @@
 
 <script type="text/javascript" src="jquery-1.12.0.min.js"></script>
 <!-- notification ends -->
+
+
+

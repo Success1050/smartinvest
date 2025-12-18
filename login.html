@@ -52,9 +52,9 @@
                 200: "#c7d2fe",
                 300: "#a5b4fc",
                 400: "#818cf8",
-                500: "#6366f1",
-                600: "#4f46e5",
-                700: "#4338ca",
+                500: "#F97316",
+                600: "#ea580c",
+                700: "#c2410c",
                 800: "#3730a3",
                 900: "#312e81",
               },
@@ -385,7 +385,7 @@ EXPERTISE.???"
                         class="h-6 w-6 text-blue-300 group-hover:scale-110 transition-transform"
                       ></i>
                       <div
-                        class="absolute -bottom-12 left-1/2 -translate-x-1/2 bg-gray-900/90 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100"
+                        class="absolute -bottom-12 left-1/2 -translate-x-1/2 bg-[#0f0f0f]/90 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100"
                       >
                         Fingerprint
                       </div>
@@ -399,7 +399,7 @@ EXPERTISE.???"
                         class="h-6 w-6 text-cyan-300 group-hover:scale-110 transition-transform"
                       ></i>
                       <div
-                        class="absolute -bottom-12 left-1/2 -translate-x-1/2 bg-gray-900/90 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100"
+                        class="absolute -bottom-12 left-1/2 -translate-x-1/2 bg-[#0f0f0f]/90 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100"
                       >
                         Face ID
                       </div>
@@ -413,7 +413,7 @@ EXPERTISE.???"
                         class="h-6 w-6 text-emerald-300 group-hover:scale-110 transition-transform"
                       ></i>
                       <div
-                        class="absolute -bottom-12 left-1/2 -translate-x-1/2 bg-gray-900/90 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100"
+                        class="absolute -bottom-12 left-1/2 -translate-x-1/2 bg-[#0f0f0f]/90 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100"
                       >
                         QR Code
                       </div>
@@ -898,7 +898,7 @@ EXPERTISE.???"
 
     <!-- Professional Trading Ticker -->
     <div
-      class="fixed bottom-0 left-0 right-0 bg-white/80 dark:bg-gray-900/90 backdrop-blur-md border-t border-gray-200/50 dark:border-gray-700/50 z-40"
+      class="fixed bottom-0 left-0 right-0 bg-white/80 dark:bg-[#0f0f0f]/90 backdrop-blur-md border-t border-gray-200/50 dark:border-gray-700/50 z-40"
     >
       <div class="tradingview-widget-container">
         <div class="tradingview-widget-container__widget"></div>
@@ -1000,5 +1000,58 @@ EXPERTISE.???"
 </script>
 <script src="https://cdn.gtranslate.net/widgets/latest/float.js" defer></script>
 -->
-  </body>
+  <style>
+  /* Scroll Animation Classes */
+  .scroll-hidden {
+    opacity: 0;
+    transition: all 1s ease-out;
+  }
+  .scroll-from-left {
+    transform: translateX(-100px);
+  }
+  .scroll-from-right {
+    transform: translateX(100px);
+  }
+  .scroll-visible {
+    opacity: 1;
+    transform: translateX(0) !important;
+  }
+  /* Ensure no overflow during animation */
+  body {
+    overflow-x: hidden;
+  }
+</style>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Select direct children of main, or sections if main missing
+    let targets = document.querySelectorAll('main > section, main > div');
+    if (targets.length === 0) {
+      targets = document.querySelectorAll('body > section');
+    }
+    
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('scroll-visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 }); // Trigger when 10% visible
+
+    targets.forEach((el, index) => {
+      el.classList.add('scroll-hidden');
+      if (index % 2 === 0) {
+        el.classList.add('scroll-from-left'); // Even: From Left
+      } else {
+        el.classList.add('scroll-from-right'); // Odd: From Right
+      }
+      observer.observe(el);
+    });
+  });
+</script>
+</body>
 </html>
+
+
+
+
